@@ -11,7 +11,10 @@
     <script type="text/javascript" class="init">
 
     $(document).ready(function () {
-        $('#namesAndColours').DataTable();
+        $('#namesAndColours').DataTable({
+        /* Disable initial sort */
+        "aaSorting": []
+        });
     });
 
 
